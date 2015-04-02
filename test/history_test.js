@@ -35,4 +35,16 @@ describe('History', function() {
       'builds': { time: 1.2 }
     });
   });
+
+  it('persists recorded events', function() {
+    var history = History.empty();
+    var happened = false;
+
+    history._historyStore = {
+      persist: function(id, data) { happened = true; }
+    }
+
+    history.record('interesting', { data: true });
+    happened.should.be.ok;
+  });
 });
