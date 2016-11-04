@@ -16,7 +16,7 @@
     "fs-extra": "~0.8.1",
     "jade": "~0.35.0",
     "mincer": "~0.5.12",
-    "node-sass": "~0.7.0",
+    "node-sass": "^3.11.1",
     "prompt": "~0.2.11",
     "request": "~2.30.0",
     "unzip": "~0.1.7",
@@ -42,5 +42,5 @@
   "scripts": {
     "test": "make test"
   },
-  "engine": "node >= 0.10"
+  "engine": "node >= 4.4.5"
 }
